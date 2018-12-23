@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1038215206981",
+    "firebase_url": "https://nadamobile.firebaseio.com",
+    "project_id": "nadamobile",
+    "storage_bucket": "nadamobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038215206981:android:be2902085fe8fafd",
+        "android_client_info": {
+          "package_name": "com.startfu.app1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038215206981-ddmdeef5rhq3q42sa8beojis0bu1g1fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe7CJ5viTIah3Wb5Oag1LYg5FaxHv5nM8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
