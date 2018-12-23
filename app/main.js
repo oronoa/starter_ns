@@ -19,22 +19,11 @@ firebase.init({
     // if your server passed a custom property called 'foo', then do this:
     console.log(`Value of 'foo': ${message.data.foo}`);
   }
-}).then(
-    function (instance) {
-      firebase.registerForPushNotifications({
-        showNotifications: true,
-        showNotificationsWhenInForeground: true,
-        onPushTokenReceivedCallback: token => console.log(`------------------- token received: ${token}`),
-        onMessageReceivedCallback: message => console.log(`------------------- message received`, message.title)
-      })
-      console.log("firebase.init done",  instance);
-      //instance.subscribeToTopic("news").then(() => console.log("Subscribed to topic"));
-      console.log('999')
-    },
-    function (error) {
-      console.log("firebase.init error: " + error);
-    }
-);
+}).then(function (instance) {
+    console.log("firebase.init done",  instance);
+    //instance.subscribeToTopic("news").then(() => console.log("Subscribed to topic"));
+    console.log('999')
+}).catch(error => console.log(`firebase.init error: ${error}`));;
 
 // Prints Vue logs when --env.production is *NOT* set while building
 Vue.config.silent = (TNS_ENV === 'production')
